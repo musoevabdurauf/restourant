@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - Boutique Eats</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=Inter:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="checkout.css">
+</head>
+
+<body>
+
+    <main class="page">
+        <h1 class="page-title">Checkout</h1>
+        <p class="page-subtitle">Guest checkout for effortless indulgence.</p>
+
+        <div class="checkout-layout">
+            <form class="delivery-card" id="checkout-form">
+                <h2>📍 Delivery Details</h2>
+
+                <div class="form-row two-col">
+                    <div class="field">
+                        <label for="first-name">First Name</label>
+                        <input id="first-name" type="text" placeholder="Jone" required>
+                    </div>
+                    <div class="field">
+                        <label for="last-name">Last Name</label>
+                        <input id="last-name" type="text" placeholder="Doe" required>
+                    </div>
+                </div>
+
+                <div class="field">
+                    <label for="address">Street Address</label>
+                    <input id="address" type="text" placeholder="123 Gourmet Lane" required>
+                </div>
+
+                <div class="form-row two-col">
+                    <div class="field">
+                        <label for="city">City</label>
+                        <input id="city" type="text" placeholder="Metropolis" required>
+                    </div>
+                    <div class="field">
+                        <label for="zip">Zip Code</label>
+                        <input id="zip" type="text" placeholder="10001" required>
+                    </div>
+                </div>
+
+                <div class="field">
+                    <label for="phone">Phone Number</label>
+                    <input id="phone" type="tel" placeholder="(555) 123-4567" required>
+                    <span class="field-hint">For delivery updates only.</span>
+                </div>
+            </form>
+
+            <aside class="order-summary">
+                <h2>Order Summary</h2>
+
+                <div class="summary-item">
+                    <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=200"
+                        alt="Truffle Mushroom Burger">
+                    <div class="summary-item-info">
+                        <span class="summary-item-name">Truffle Mushroom Burger</span>
+                        <span class="summary-item-note">Medium rare</span>
+                    </div>
+                    <span class="summary-item-price">$24</span>
+                </div>
+
+                <div class="summary-item">
+                    <img src="https://images.unsplash.com/photo-1541592106381-b31e9677c0e5?w=200"
+                        alt="Sweet Potato Fries">
+                    <div class="summary-item-info">
+                        <span class="summary-item-name">Sweet Potato Fries</span>
+                        <span class="summary-item-note">Garlic aioli</span>
+                    </div>
+                    <span class="summary-item-price">$8</span>
+                </div>
+
+                <hr class="divider">
+
+                <div class="summary-row">
+                    <span>Subtotal</span>
+                    <span>$32.00</span>
+                </div>
+                <div class="summary-row">
+                    <span>Delivery Fee</span>
+                    <span>$4.50</span>
+                </div>
+                <div class="summary-row">
+                    <span>Taxes</span>
+                    <span>$2.88</span>
+                </div>
+
+                <div class="summary-total">
+                    <span>Total</span>
+                    <span>$39.38</span>
+                </div>
+
+                <button type="submit" form="checkout-form" class="place-order-btn">Place Order →</button>
+            </aside>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <span class="footer-logo">Boutique Eats</span>
+            <nav class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Contact Us</a>
+                <a href="#">Partner with Us</a>
+            </nav>
+            <span class="footer-copy">© 2024 Boutique Eats. Effortless Indulgence.</span>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
