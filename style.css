@@ -173,7 +173,7 @@ a { text-decoration: none; color: inherit; }
   line-height: 1.4;
   margin: 0;
   display: -webkit-box;
-  -webkit-line-clamp: 2;
+  /* -webkit-line-clamp: 2; */
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
@@ -240,4 +240,68 @@ a { text-decoration: none; color: inherit; }
 
 @media (max-width: 640px) {
   .header-inner, .footer-inner { flex-direction: column; gap: 14px; }
+}
+.allProducts {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 24px;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 32px 80px;
+}
+
+.allProducts > div {
+  background: #FFFFFF;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(43, 35, 32, 0.06);
+  padding: 0 0 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.allProducts > div img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  display: block;
+}
+
+.allProducts > div h1 {
+  font-family: 'Fraunces', serif;
+  font-size: 1.1rem;
+  margin: 14px 20px 6px;
+}
+
+.allProducts > div p {
+  color: #7A6F68;
+  font-size: 0.88rem;
+  line-height: 1.4;
+  margin: 0 20px 10px;
+}
+
+.allProducts > div h3 {
+  color: #C1440C;
+  font-size: 1rem;
+  margin: 0 20px 4px;
+}
+.allProducts > div {
+  position: relative;
+}
+
+.addBtn {
+  background: #9E3809;
+  color: #fff;
+  border: none;
+  padding: 9px 22px;
+  border-radius: 999px;
+  font-weight: 600;
+  cursor: pointer;
+  margin: 6px 20px 0;
+  align-self: flex-end;
+  transition: background 0.15s ease;
+}
+
+.addBtn:hover {
+  background: #C1440C;
 }

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
@@ -7,7 +7,7 @@
     <title>Your Cart - Boutique Eats</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link
-        href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=Inter:wght@400;500;600&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Inter:wght@400;500;600&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="cart.css">
 </head>
@@ -22,8 +22,8 @@
                 <a href="favorites.html" class="nav-link">Favorites</a>
             </nav>
             <div class="header-icons">
-                <a href="cart.html" class="icon-btn" aria-label="Cart">🛒</a>
-                <a href="#" class="icon-btn" aria-label="Account">👤</a>
+                <a href="cart.html" class="icon-btn">🛒</a>
+                <a href="#" class="icon-btn">👤</a>
             </div>
         </div>
     </header>
@@ -33,56 +33,13 @@
         <p class="page-subtitle">Review your selections before effortless indulgence.</p>
 
         <div class="cart-layout">
-            <div class="cart-items">
-
-                <article class="cart-item" data-price="24.00" data-qty="2">
-                    <img src="https://images.unsplash.com/photo-1476124369491-e7addf5db371?w=200"
-                        alt="Truffle Mushroom Risotto">
-                    <div class="cart-item-info">
-                        <div class="cart-item-top">
-                            <h3>Truffle Mushroom Risotto</h3>
-                            <button class="remove-btn" aria-label="Remove item">✕</button>
-                        </div>
-                        <p class="cart-item-desc">Creamy arborio rice, wild mushrooms, white truffle oil.</p>
-                        <div class="cart-item-bottom">
-                            <div class="qty-control">
-                                <button class="qty-btn minus">–</button>
-                                <span class="qty-value">2</span>
-                                <button class="qty-btn plus">+</button>
-                            </div>
-                            <span class="line-price">$48.00</span>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="cart-item" data-price="65.00" data-qty="1">
-                    <img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=200"
-                        alt="Wagyu Bavette Steak">
-                    <div class="cart-item-info">
-                        <div class="cart-item-top">
-                            <h3>Wagyu Bavette Steak</h3>
-                            <button class="remove-btn" aria-label="Remove item">✕</button>
-                        </div>
-                        <p class="cart-item-desc">8oz cut, charred asparagus, red wine jus.</p>
-                        <div class="cart-item-bottom">
-                            <div class="qty-control">
-                                <button class="qty-btn minus">–</button>
-                                <span class="qty-value">1</span>
-                                <button class="qty-btn plus">+</button>
-                            </div>
-                            <span class="line-price">$65.00</span>
-                        </div>
-                    </div>
-                </article>
-
-                <a href="index.html" class="add-more">+ Add more items from catalog</a>
-            </div>
+            <div class="allCart"></div>
 
             <aside class="order-summary">
                 <h2>Order Summary</h2>
                 <div class="summary-row">
-                    <span>Subtotal (<span id="item-count">3</span> items)</span>
-                    <span id="subtotal">$113.00</span>
+                    <span>Subtotal (<span id="item-count">0</span> items)</span>
+                    <span id="subtotal">$0.00</span>
                 </div>
                 <div class="summary-row">
                     <span>Delivery Fee</span>
@@ -90,7 +47,7 @@
                 </div>
                 <div class="summary-row">
                     <span>Taxes</span>
-                    <span id="taxes">$9.04</span>
+                    <span id="taxes">$0.00</span>
                 </div>
 
                 <div class="promo-row">
@@ -100,7 +57,7 @@
 
                 <div class="summary-total">
                     <span>Total</span>
-                    <span id="total">$128.03</span>
+                    <span id="total">$0.00</span>
                 </div>
 
                 <a href="checkout.html" class="checkout-btn">Proceed to Checkout →</a>
@@ -121,7 +78,7 @@
         </div>
     </footer>
 
-
+    <script src="cart.js"></script>
 </body>
 
 </html>
